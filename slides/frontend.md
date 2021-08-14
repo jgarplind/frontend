@@ -39,6 +39,35 @@
 
 ## Webbutveckling
 
+- Bygg en gång, använd var som helst
+- www, since 1989
+- En länk bort ifrån en fullfjädrad användarupplevelse
+- Enorm utvecklar-community
+- Sammtaget - Väldigt roligt!
+
+--
+
+### HTML
+
+> Inga problem, det vet jag hur man skriver!
+
+..eller? <!-- .element: class="fragment fade-in"  -->
+
+--
+
+### HTML (2)
+
+- Struktur, information, och inbyggd logik
+- Enkelt att lära sig, svårt att bemästra
+
+[HTML playground](https://codesandbox.io/s/how-to-html-nkbpo?file=/index.html)
+
+--
+
+### CSS
+
+-
+
 ---
 
 ## Made using
