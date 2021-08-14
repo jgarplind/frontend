@@ -68,7 +68,29 @@
 
 -
 
+### JavaScript
+
 ---
+
+## Frameworks
+
+---
+
+## React
+
+---
+
+## Tooling
+
+---
+
+## Data
+
+---
+
+## Useful patterns
+
+--
 
 ## Made using
 
