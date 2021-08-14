@@ -1,3 +1,3 @@
 # Slides
 
-A template repository for slides based on [reveal.js](reveal.js).
+A template repository for slides based on [reveal.js](https://revealjs.com/).
