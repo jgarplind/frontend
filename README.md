@@ -1,6 +1,6 @@
-# Slides
+# Frontend
 
-A template repository for slides based on [reveal.js](reveal.js).
+A slide deck for introducing front end-development made using [reveal.js](https://revealjs.com/).
 
 ## FAQ
 
