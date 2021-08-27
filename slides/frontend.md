@@ -72,6 +72,13 @@ Spara fork-länken/skapa ett konto och spara den där, vi kommer tillbaka hit! <
 
 --
 
+#### Begränsningar
+
+- Svårt att återanvända
+- Svårt att få dynamiskt (on-the-fly databas-baserade val i en Dropdown till exempel)
+
+--
+
 #### Nästa steg
 
 - Förstå hur template-språk så som [JSX](https://reactjs.org/docs/introducing-jsx.html) (React), [HTML-templates](https://v3.vuejs.org/guide/template-syntax.html) (Vue) förhåller sig till HTML
@@ -100,25 +107,35 @@ Spara fork-länken/skapa ett konto och spara den där, vi kommer tillbaka hit! <
 
 - Alla moderna webbläsare har inbyggd default-CSS
 - Definierar hur HTML ska visualiseras
-- Globalt
+- Globalt scope
 - Cascading
 - _Implicit_
 
 --
 
-#### Anatomi
+#### Anatomi och begrepp
 
 Inspo: Josh CSS-kurs
+
+- Rule
+- Property
+- etc.
 
 --
 
 #### HTML-integration
+
+- Klasser! (men också andra properties)
+- inline-\<style\>
+- `<link>...`
 
 --
 
 #### Labb
 
 Använd länken från HTML-labben
+
+Olika nivåer, ~3 förslag så att något passar
 
 --
 
@@ -140,49 +157,102 @@ Använd länken från HTML-labben
 - Ger liv till våra statiska dokument
 - Ett någorlunda konventionellt programmeringsspråk - det enda som webbläsare förstår
 - Hatat och älskat
-- VanillaJS
+- "Vanilla"-JS
 
 --
 
 #### Generella kodexempel
 
+- const, let, var
+- datatyper
+
 --
 
 #### DOM-manipulation
+
+- document-API:et
 
 --
 
 #### HTML-integration
 
+- Inline-script
+- Referens till annan fil
+- Referens till fil på webben
+
 --
 
 #### Labb
+
+Mini-labb i sandbox: textfält + knapp lägger till nytt select-option
+
+--
+
+#### Node och npm
+
+- Node - JavaScript utanför webbläsaren
+- npm - Portalen till återanvändning av miljontals JavaScript-paket
 
 --
 
 #### Nästa steg
 
+- Grundlig förståelse för "Vanilla" JS
+- TypeScript
+- Utforska ekosystemet
+
 ---
 
-## Frameworks
+## Ramverk
+
+- Abstraherar HTML/CSS/JavaScript
+- React, Vue, Svelte, etc.
+- Skjuter ofta mycket ansvar till JavaScript
 
 ---
 
 ## React
 
+- Används i de allra flesta uppdrag idag
+- Ett bibliotek med mycket frihet, som ramverk så som NextJS och Gatsby bygger på
+- Deklarativ JSX-kod
+- Hur hjälper React oss att skriva återanvändbar kod?
+
+---
+
+#### Labb
+
+React-(TypeScript?)-template, återskapa funktionalitet från tidigare labb, jämför kod
+
+---
+
+## React, SCSS och TypeScript till HTML, CSS och JavaScript
+
+- Bundler
+- Transpiler/Compiler
+
 ---
 
 ## Tooling
 
+- Linter
+- Kodformatterare
+
 ---
 
-## Data
+## Data och APIer
+
+- JavaScripts fetch-API används i moderna webbapplikationer
+- Hämtar ofta data som JSON från REST-APIer
+- JSON behandlas sedan och används i applikationen
+- Mycket spännande innovation så som react-query, RTK Query och swr
+- GraphQL
 
 ---
 
-## Useful patterns
+## Hosting
 
---
+---
 
 ## Made using
 
