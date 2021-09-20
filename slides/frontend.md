@@ -45,7 +45,7 @@
 - Enorm utvecklar-community
 - Sammtaget - Väldigt roligt!
 
---
+---
 
 ### HTML
 
@@ -85,7 +85,7 @@ Spara fork-länken/skapa ett konto och spara den där, vi kommer tillbaka hit! <
 - Förstå vikten av semantisk HTML
 - Förstå hur HTML förhåller sig till CSS och JavaScript (coming up!)
 
---
+---
 
 ### CSS
 
@@ -115,19 +115,19 @@ Spara fork-länken/skapa ett konto och spara den där, vi kommer tillbaka hit! <
 
 #### Anatomi och begrepp
 
-Inspo: Josh CSS-kurs
-
 - Rule
 - Property
-- etc.
+- Selector
+- Declaration
+- Unit
 
 --
 
 #### HTML-integration
 
-- Klasser! (men också andra properties)
 - inline-\<style\>
 - `<link>...`
+- Klasser! (men också andra properties)
 
 --
 
@@ -144,13 +144,15 @@ Olika nivåer, ~3 förslag så att något passar
 - Repetetivt
 - Specificitetskrig
 
+--
+
 #### Nästa steg
 
 - Förstå hur [Sass](https://sass-lang.com/), [Styled components](https://styled-components.com/), [Tailwind](https://tailwindcss.com/) förhåller sig till CSS
 - Förstå hur [BEM](http://getbem.com/), [CSS Modules](https://github.com/css-modules/css-modules) förenklar CSS genom att undvika specificitetskrig
 - Förstå hur vi genom att nyttja snarare än programmera bort kaskaden kan skriva effektiv CSS, se [Every Layout](https://every-layout.dev/layouts/)
 
---
+---
 
 ### JavaScript
 
@@ -209,20 +211,29 @@ Mini-labb i sandbox: textfält + knapp lägger till nytt select-option
 - React, Vue, Svelte, etc.
 - Skjuter ofta mycket ansvar till JavaScript
 
----
+--
 
-## React
+### React
 
 - Används i de allra flesta uppdrag idag
 - Ett bibliotek med mycket frihet, som ramverk så som NextJS och Gatsby bygger på
 - Deklarativ JSX-kod
 - Hur hjälper React oss att skriva återanvändbar kod?
 
----
+--
+
+### Komponenter
+
+- Används i de allra flesta uppdrag idag
+- Ett bibliotek med mycket frihet, som ramverk så som NextJS och Gatsby bygger på
+- Deklarativ JSX-kod
+- Hur hjälper React oss att skriva återanvändbar kod?
+
+--
 
 #### Labb
 
-React-(TypeScript?)-template, återskapa funktionalitet från tidigare labb, jämför kod
+React-template, återskapa funktionalitet från tidigare labb, jämför kod
 
 ---
 
@@ -237,6 +248,7 @@ React-(TypeScript?)-template, återskapa funktionalitet från tidigare labb, jä
 
 - Linter
 - Kodformatterare
+- Versionshantering
 
 ---
 
@@ -244,13 +256,20 @@ React-(TypeScript?)-template, återskapa funktionalitet från tidigare labb, jä
 
 - JavaScripts fetch-API används i moderna webbapplikationer
 - Hämtar ofta data som JSON från REST-APIer
-- JSON behandlas sedan och används i applikationen
+- JSON deserialiseras sedan och används i applikationen
 - Mycket spännande innovation så som react-query, RTK Query och swr
 - GraphQL
+- Streaming - inte bara för film!
 
 ---
 
 ## Hosting
+
+Busenkelt när det kommer till statiska webbapplikationer
+
+- Enklast: Öppna en HTML-fil du har lokalt i din webbläsare
+- Nästan lika enkelt: Kolla in Netlify/Heroku eller dylik tjänst
+- I typiska projekt: Ungefär som #2, fast med den provider kunden nyttjar, t ex Azure DevOps
 
 ---
 
