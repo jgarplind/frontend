@@ -186,51 +186,63 @@ Note: Repetition förekommer alltid, optimera inte för tidigt
 
 ### JavaScript
 
-- Ger liv till våra statiska dokument
-- Ett någorlunda konventionellt programmeringsspråk - det enda som webbläsare förstår
-- Hatat och älskat
-- "Vanilla"-JS
+- Ger [liv](https://www.joshwcomeau.com/react/animated-sparkles-in-react/) till statiska HTML-dokument
+- Ett någorlunda konventionellt programmeringsspråk - det enda\* som webbläsare förstår
+- [Hatat](https://dev.to/zimspy007/why-we-love-to-hate-javascript-nfd) och älskat
+- Benämns ibland "VanillaJS"
+
+_\* [sanning med modifikation](https://developer.mozilla.org/en-US/docs/WebAssembly)_
 
 --
 
-#### Generella kodexempel
+### JavaScript - Generella kodexempel
 
 - const, let, var
 - datatyper
 
+Tips:
+
+- [API-referens](https://developer.mozilla.org/en-US/)
+- [Vettig kurs, scrolla till botten och hämta din "Free Preview"](https://justjavascript.com/)
+
 --
 
-#### DOM-manipulation
+### JavaScript - DOM-manipulation
 
 - document-API:et
 
+Note: Öppna DevTools. `document.` (autocomplete) `location.hostname`. `document.getElementById('... vadå?'). Kolla Elements. ById.toString(). Kolla upp i MDN. Hidden. Byt innerText.
+
 --
 
-#### HTML-integration
+### JavaScript - [HTML-integration](https://codesandbox.io/s/link-html-and-javascript-6vj6b)
 
 - Inline-script
-- Referens till annan fil
-- Referens till fil på webben
+- Referens till annan fil i samma projekt
+- [Referens till tredjepartsfil på webben](https://reactjs.org/docs/cdn-links.html)
+- [... men tänk till först](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript)
 
 --
 
-#### Labb
+### JavaScript - Labb
 
-Mini-labb i sandbox: textfält + knapp lägger till nytt select-option
+(Anpassa till Jenny/Backend)
 
 --
 
-#### Node och npm
+#### JavaScript - Node och npm
 
-- Node - JavaScript utanför webbläsaren
-- npm - Portalen till återanvändning av miljontals JavaScript-paket
+- [Node](https://nodejs.org/en/) - JavaScript utanför webbläsaren
+- [npm](https://www.npmjs.com/package/react) - Portalen till återanvändning av miljontals JavaScript-paket, [se Jonathan berätta mer och ge exempel](https://web.microsoftstream.com/video/f406c765-a041-44fd-b41b-cb5a219d472c?referrer=https:%2F%2Fl.workplace.com%2F) (timestamp xx:xx)
+
+Note: Node - främst relevant för JavaScript i server-sammanhang. Men, också basen för npm som är vitalt för JavaScripts ekosystem
 
 --
 
 #### Nästa steg
 
-- Grundlig förståelse för "Vanilla" JS
-- TypeScript
+- Grundlig förståelse för JavaScript
+- [TypeScript](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html)
 - Utforska ekosystemet
 
 ---
