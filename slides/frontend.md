@@ -111,9 +111,11 @@ Note: Bekant med front end? Borde väl bara kunna importera en HTML-fil? Nope (s
 
 ... fast så illa är det inte! <!-- .element: class="fragment fade-in"  -->
 
+Note: Ökänt för att vara svårt att skala, vilket ofta bygger på dålig grundförståelse, lite som HTML, fast märks tydligare för alla
+
 --
 
-#### Några exempel
+### CSS - Några exempel
 
 1. [Plain HTML](https://motherfuckingwebsite.com/)
 2. [HTML med CSS](http://bettermotherfuckingwebsite.com/) <!-- .element: class="fragment fade-in"  -->
@@ -121,17 +123,19 @@ Note: Bekant med front end? Borde väl bara kunna importera en HTML-fil? Nope (s
 
 --
 
-#### Hårda fakta
+### CSS - Blandade fakta
 
-- Alla moderna webbläsare har inbyggd default-CSS
+- Alla (moderna) webbläsare har [inbyggd default-CSS](https://motherfuckingwebsite.com/)
 - Definierar hur HTML ska visualiseras
-- Globalt scope
-- Cascading
-- _Implicit_
+- [Globalt scope](https://codesandbox.io/s/affectionate-benz-wppjz?file=/index.html)
+- [Cascading](https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade)
+- [Implicit](https://www.joshwcomeau.com/css/the-importance-of-learning-css/#it-improves-your-quality-of-life)
+
+Note: Öppna DevTools.
 
 --
 
-#### Anatomi och begrepp
+### CSS - [Anatomi](https://courses.joshwcomeau.com/css-for-js/00-recap/02-anatomy) och begrepp
 
 - Rule
 - Property
@@ -141,32 +145,40 @@ Note: Bekant med front end? Borde väl bara kunna importera en HTML-fil? Nope (s
 
 --
 
-#### HTML-integration
+### CSS - HTML-integration
 
-- inline-\<style\>
-- `<link>...`
-- Klasser! (men också andra properties)
-
---
-
-#### Labb
-
-Använd länken från HTML-labben
-
-Olika nivåer, ~3 förslag så att något passar
+- [inline-\<style\>](https://codesandbox.io/s/affectionate-benz-wppjz?file=/index.html)
+- `<link>`, tryck F12!
+- HTML-attributet "class" (men också andra properties)
 
 --
 
-#### Vanliga problem
+### CSS - Labb
 
-- Repetetivt
-- Specificitetskrig
+[Codesandbox - utgångspunkt](https://codesandbox.io/s/huckleberry-hk4jq?file=/index.html)
+
+Beroende på ambitions-/kunskapsnivå:
+
+1. Försök att efterlikna enskilda element
+2. Gör något som liknar helheten
+3. Gör en responsiv lösning som fungerar oavsett skärmstorlek
+
+Note: Demonstrera [facit](https://courses.joshwcomeau.com/css-for-js/01-rendering-logic-1/15-flow-workshop) lokalt. [Min dugliga lösning](codesandbox.io/s/huckleberry-forked-6c3zl)
 
 --
 
-#### Nästa steg
+### CSS - Vanliga problem
 
-- Förstå hur [Sass](https://sass-lang.com/), [Styled components](https://styled-components.com/), [Tailwind](https://tailwindcss.com/) förhåller sig till CSS
+- [Repetetivt](https://codesandbox.io/s/eager-drake-u85x5?file=/index.html). Motmedel: [Utility classes](https://adamwathan.me/css-utility-classes-and-separation-of-concerns/), komponenter (coming up!)
+- [Specificitetskrig](https://css-tricks.com/a-specificity-battle/)
+
+Note: Repetition förekommer alltid, optimera inte för tidigt
+
+--
+
+### CSS - Nästa steg
+
+- Förstå hur [Sass](https://sass-lang.com/), [Styled components](https://styled-components.com/), [Tailwind](https://tailwindcss.com/) och andra CSS-relaterade bibliotek förhåller sig till CSS
 - Förstå hur [BEM](http://getbem.com/), [CSS Modules](https://github.com/css-modules/css-modules) förenklar CSS genom att undvika specificitetskrig
 - Förstå hur vi genom att nyttja snarare än programmera bort kaskaden kan skriva effektiv CSS, se [Every Layout](https://every-layout.dev/layouts/)
 
