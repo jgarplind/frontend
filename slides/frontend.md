@@ -1,6 +1,6 @@
 # Front end
 
-### 2021-08-06
+### 2021-09-30
 
 ---
 
@@ -250,80 +250,97 @@ Note: Node - främst relevant för JavaScript i server-sammanhang. Men, också b
 ## Ramverk
 
 - Abstraherar HTML/CSS/JavaScript
-- React, Vue, Svelte, etc.
-- Skjuter ofta mycket ansvar till JavaScript
+- [React](https://reactjs.org/docs/getting-started.html), [Vue](https://vuejs.org/), [Svelte](https://svelte.dev/), med flera.
+- Skjuter ofta [mycket ansvar till JavaScript](https://codesandbox.io/s/practical-andras-97i1d?file=/public/index.html)
 
 --
 
 ### React
 
-- Används i de allra flesta uppdrag idag
-- Ett bibliotek med mycket frihet, som ramverk så som NextJS och Gatsby bygger på
-- Deklarativ JSX-kod
-- Hur hjälper React oss att skriva återanvändbar kod?
+- Används i de allra flesta av våra uppdrag idag
+- Ett _bibliotek_ med mycket frihet, som ramverk så som [NextJS](https://nextjs.org/) och [Gatsby](https://www.gatsbyjs.com/) bygger på
+- Skrivs oftast som _deklarativ_ [JSX](https://reactjs.org/docs/introducing-jsx.html)-kod
+- Hjälper oss att skriva återanvändbar kod
+
+Note: Mycket frihet = unopinionated. Bring your own... router, etc.
 
 --
 
 ### Komponenter
 
-- Används i de allra flesta uppdrag idag
-- Ett bibliotek med mycket frihet, som ramverk så som NextJS och Gatsby bygger på
-- Deklarativ JSX-kod
-- Hur hjälper React oss att skriva återanvändbar kod?
+- Små, isolerade, återanvändbara delar av webbapplikationer
+- Inte unikt för React
+- [Exempelkomponent](TODO)
+
+Note: Komponenter kan vara väldigt simpla (knapp) eller väldigt komplexa (hela vyer). Gått från sidor till vyer. Kolla igenom exempelkomponent och prata lite om props.
 
 --
 
 ### React - Viktiga koncept och begrepp
 
-- Rendering
-- Virtual DOM
-- Hooks
-- JSX
+- [State](https://reactjs.org/docs/hooks-state.html)
+- [Virtual DOM](https://javascript.plainenglish.io/react-the-virtual-dom-comprehensive-guide-acd19c5e327a)
+- [Rendering](https://dev.to/teo_garcia/understanding-rendering-in-react-i5i)
+- [Hooks](https://reactjs.org/docs/hooks-intro.html)
 
 --
 
 #### Labb
 
-React-template, återskapa funktionalitet från tidigare labb, jämför kod
+React-template, återskapa funktionalitet från förra labben, jämför kod
 
 ---
 
-## React, SCSS och TypeScript till HTML, CSS och JavaScript
+## React, [SCSS](https://sass-lang.com/) och TypeScript till HTML, CSS och JavaScript
 
-- Bundler
-- Transpiler/Compiler
+- [Bundler](https://webpack.js.org/concepts/why-webpack/) - buntar ihop många små filer till en stor.
+- [Transpiler/Compiler](https://babeljs.io/repl/) - låter oss skriva kod som webbläsaren inte förstår
+- [Kanske inte nödvändigt i en nära framtid](https://world.hey.com/dhh/modern-web-apps-without-javascript-bundling-or-transpiling-a20f2755)
 
----
-
-## Tooling
-
-- Linter
-- Kodformatterare
-- Versionshantering
+Note: Bundler - Webpack. Transpiler - Babel/tsc
 
 ---
 
-## Data och APIer
+## Vanligt förekommande tooling
 
-- JavaScripts fetch-API används i moderna webbapplikationer
-- Hämtar ofta data som JSON från REST-APIer
-- JSON deserialiseras sedan och används i applikationen
-- Mycket spännande innovation så som react-query, RTK Query och swr
-- GraphQL
-- Streaming - inte bara för film!
+- Editor - [VS Code](https://code.visualstudio.com/)
+- Linter - [ESLint](https://eslint.org/)
+- Kodformatterare - [Prettier](https://prettier.io/)
+- Versionshantering - [git](https://git-scm.com/)
+- Pakethantering - npm, som kommer med [Node](https://nodejs.org/en/)
+
+---
+
+## Data och API:er
+
+- JavaScripts [fetch-API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) används i moderna webbapplikationer, ibland genom bibliotek så som [Axios](https://github.com/axios/axios)
+- Hämtar ofta data som [JSON](https://json.org/example.html) från [REST](https://restfulapi.net/)-API:er
+- JSON [deserialiseras](https://developer.mozilla.org/en-US/docs/Glossary/Deserialization) sedan och används i applikationen
+
+Note: fetch-API - red ut API-begreppet. Ofta pragmatiskt förhållningssätt till REST
+
+--
+
+## Data och API:er framöver
+
+- Smartare front ends med t ex [react-query](https://react-query.tanstack.com/)
+- [GraphQL](https://graphql.org/) (TODO: Hänvisa till Alex/Ammar FFCG-video)
+- [Streaming](https://www.youtube.com/watch?v=G9PpImUEeUA) - inte bara för video
 
 ---
 
 ## Hosting
 
-Busenkelt när det kommer till statiska webbapplikationer
+Busenkelt när det kommer till [statiska webbapplikationer](https://en.wikipedia.org/wiki/Static_web_page)
 
 - Enklast: Öppna en HTML-fil du har lokalt i din webbläsare
-- Nästan lika enkelt: Kolla in Netlify/Heroku eller dylik tjänst
-- I typiska projekt: Ungefär som #2, fast med den provider kunden nyttjar, t ex Azure DevOps
+- Nästan lika enkelt: Kolla in [Netlify](https://www.netlify.com/)/[Heroku](https://www.heroku.com/) eller dylik tjänst
+- I typiska projekt: Ungefär som #2, fast med den provider kunden nyttjar, t ex Azure
+
+Note: Statisk webbapplikationer är de som har all dynamik på klient-sidan.
 
 ---
 
-## Made using
+## Tack för idag
 
-[reveal.js](https://github.com/hakimel/reveal.js)
+Presentation gjord med [reveal.js](https://github.com/hakimel/reveal.js)
