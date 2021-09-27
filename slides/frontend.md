@@ -105,7 +105,7 @@ Note: Bekant med front end? Borde väl bara kunna importera en HTML-fil? Nope (s
 
 ---
 
-### CSS
+### [CSS](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics)
 
 ![CSS](img/css.gif) <!-- .element: class="fragment fade-in"  -->
 
@@ -125,8 +125,8 @@ Note: Ökänt för att vara svårt att skala, vilket ofta bygger på dålig grun
 
 ### CSS - Blandade fakta
 
-- Alla (moderna) webbläsare har [inbyggd default-CSS](https://motherfuckingwebsite.com/)
 - Definierar hur HTML ska visualiseras
+- Alla (moderna) webbläsare har [inbyggd default-CSS](https://motherfuckingwebsite.com/)
 - [Globalt scope](https://codesandbox.io/s/affectionate-benz-wppjz?file=/index.html)
 - [Cascading](https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade)
 - [Implicit](https://www.joshwcomeau.com/css/the-importance-of-learning-css/#it-improves-your-quality-of-life)
@@ -199,6 +199,7 @@ _\* [sanning med modifikation](https://developer.mozilla.org/en-US/docs/WebAssem
 
 - const, let, var
 - datatyper
+- es6
 
 Tips:
 
@@ -209,7 +210,7 @@ Tips:
 
 ### JavaScript - DOM-manipulation
 
-- document-API:et
+- [document-API:et](https://developer.mozilla.org/en-US/docs/Web/API/Document)
 
 Note: Öppna DevTools. `document.` (autocomplete) `location.hostname`. `document.getElementById('... vadå?'). Kolla Elements. ById.toString(). Kolla upp i MDN. Hidden. Byt innerText.
 
@@ -233,7 +234,7 @@ Note: Öppna DevTools. `document.` (autocomplete) `location.hostname`. `document
 #### JavaScript - Node och npm
 
 - [Node](https://nodejs.org/en/) - JavaScript utanför webbläsaren
-- [npm](https://www.npmjs.com/package/react) - Portalen till återanvändning av miljontals JavaScript-paket, [se Jonathan berätta mer och ge exempel](https://web.microsoftstream.com/video/f406c765-a041-44fd-b41b-cb5a219d472c?referrer=https:%2F%2Fl.workplace.com%2F) (timestamp xx:xx)
+- [npm](https://www.npmjs.com/package/react) - Portalen till återanvändning av miljontals JavaScript-paket, [se Jonathan berätta mer och ge exempel](https://web.microsoftstream.com/video/f406c765-a041-44fd-b41b-cb5a219d472c?st=924)
 
 Note: Node - främst relevant för JavaScript i server-sammanhang. Men, också basen för npm som är vitalt för JavaScripts ekosystem
 
@@ -266,11 +267,11 @@ Note: Mycket frihet = unopinionated. Bring your own... router, etc.
 
 --
 
-### Komponenter
+### React - Komponenter
 
 - Små, isolerade, återanvändbara delar av webbapplikationer
 - Inte unikt för React
-- [Exempelkomponent](TODO)
+- [Exempelkomponent](https://codesandbox.io/s/react-counter-functional-component-xge6o?file=/src/Counter.js)
 
 Note: Komponenter kan vara väldigt simpla (knapp) eller väldigt komplexa (hela vyer). Gått från sidor till vyer. Kolla igenom exempelkomponent och prata lite om props.
 
@@ -285,7 +286,7 @@ Note: Komponenter kan vara väldigt simpla (knapp) eller väldigt komplexa (hela
 
 --
 
-#### Labb
+### React - Labb
 
 React-template, återskapa funktionalitet från förra labben, jämför kod
 
@@ -295,7 +296,7 @@ React-template, återskapa funktionalitet från förra labben, jämför kod
 
 - [Bundler](https://webpack.js.org/concepts/why-webpack/) - buntar ihop många små filer till en stor.
 - [Transpiler/Compiler](https://babeljs.io/repl/) - låter oss skriva kod som webbläsaren inte förstår
-- [Kanske inte nödvändigt i en nära framtid](https://world.hey.com/dhh/modern-web-apps-without-javascript-bundling-or-transpiling-a20f2755)
+- [...kanske inte nödvändigt i en nära framtid](https://world.hey.com/dhh/modern-web-apps-without-javascript-bundling-or-transpiling-a20f2755)
 
 Note: Bundler - Webpack. Transpiler - Babel/tsc
 
@@ -324,20 +325,19 @@ Note: fetch-API - red ut API-begreppet. Ofta pragmatiskt förhållningssätt til
 ## Data och API:er framöver
 
 - Smartare front ends med t ex [react-query](https://react-query.tanstack.com/)
-- [GraphQL](https://graphql.org/) (TODO: Hänvisa till Alex/Ammar FFCG-video)
-- [Streaming](https://www.youtube.com/watch?v=G9PpImUEeUA) - inte bara för video
+- [GraphQL](https://graphql.org/) som [några kollegor snackade om](https://web.microsoftstream.com/video/fcf4e3f4-316a-4156-8634-57e0b83c1619?referrer=https:%2F%2Fl.workplace.com%2F)
+- [Streaming](https://www.youtube.com/watch?v=G9PpImUEeUA) - inte bara för video, fast länken går till en video..
 
 ---
 
 ## Hosting
 
-Busenkelt när det kommer till [statiska webbapplikationer](https://en.wikipedia.org/wiki/Static_web_page)
+Okomplicerat när det kommer till [statiska webbapplikationer](https://en.wikipedia.org/wiki/Static_web_page)
 
-- Enklast: Öppna en HTML-fil du har lokalt i din webbläsare
-- Nästan lika enkelt: Kolla in [Netlify](https://www.netlify.com/)/[Heroku](https://www.heroku.com/) eller dylik tjänst
-- I typiska projekt: Ungefär som #2, fast med den provider kunden nyttjar, t ex Azure
+- Kolla in [Netlify](https://www.netlify.com/)/[Heroku](https://www.heroku.com/) eller dylika tjänster
+- I typiska projekt: Ungefär samma sak, fast med den provider kunden nyttjar, t ex Azure
 
-Note: Statisk webbapplikationer är de som har all dynamik på klient-sidan.
+Note: Statisk webbapplikationer är de som har all dynamik på klient-sidan. Visa Netlify om tid. Kan ofta vara mer customization på typiska uppdrag - lära sig mer på DevOps-session.
 
 ---
 
