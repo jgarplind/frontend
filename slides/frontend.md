@@ -76,28 +76,20 @@ Note: Förväntas alltid, men lärs sällan ut. Förlåtande, webbläsarna jobba
 
 --
 
-#### [HTML-Labb](https://codesandbox.io/s/how-to-html-nkbpo?file=/index.html)
+### [HTML-Labb](https://codesandbox.io/s/how-to-html-nkbpo?file=/index.html)
 
 --
 
-### Innan vi lämnar labben
+### HTML - Begränsningar
 
-![Klicka "Fork" för att få en kopia av sandboxen](img/codesandbox_fork.PNG)
-
-**Spara** fork-länken, eller skapa ett konto och spara den där, vi kommer tillbaka hit i kommande labbar!
-
---
-
-#### HTML - Begränsningar
-
-- [Svårt att återanvända](https://developer.mozilla.org/en-US/docs/Web/Web_Components/HTML_Imports)
+- Svårt att återanvända
 - Svårt att få dynamiskt (on-the-fly databas-baserade val i en [Dropdown](https://www.carbondesignsystem.com/components/dropdown/usage/#live-demo) till exempel)
 
-Note: Bekant med front end? Borde väl bara kunna importera en HTML-fil? Nope (se länk)
+Note: Bekant med front end? Borde väl bara kunna importera en HTML-fil? Nope! Hade en länk som visade att HTML imports är deprecated, men den blev borttagen, säger väl det mesta!
 
 --
 
-#### Nästa steg
+### HTML - Nästa steg
 
 - Förstå hur template-språk så som [JSX](https://reactjs.org/docs/introducing-jsx.html) (React), [HTML-templates](https://v3.vuejs.org/guide/template-syntax.html) (Vue) förhåller sig till HTML
 - Förstå vikten av _semantisk_ HTML
@@ -126,12 +118,12 @@ Note: Ökänt för att vara svårt att skala, vilket ofta bygger på dålig grun
 ### CSS - Blandade fakta
 
 - Definierar hur HTML ska visualiseras
-- Alla (moderna) webbläsare har [inbyggd default-CSS](https://motherfuckingwebsite.com/)
+- Alla (moderna) webbläsare har [inbyggd default-CSS](https://motherfuckingwebsite.com/). Ignorera med hjälp av en [CSS reset](https://meyerweb.com/eric/tools/css/reset/)
 - [Globalt scope](https://codesandbox.io/s/affectionate-benz-wppjz?file=/index.html)
 - [Cascading](https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade)
 - [Implicit](https://www.joshwcomeau.com/css/the-importance-of-learning-css/#it-improves-your-quality-of-life)
 
-Note: Öppna DevTools.
+Note: Layout, färger, etc. Öppna DevTools. Visa Computed.
 
 --
 
@@ -149,7 +141,7 @@ Note: Öppna DevTools.
 
 - [inline-\<style\>](https://codesandbox.io/s/affectionate-benz-wppjz?file=/index.html)
 - `<link>`, tryck F12!
-- HTML-attributet "class" (men också andra properties)
+- HTML-attributet [class](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/class) (men också andra properties)
 
 --
 
@@ -178,9 +170,10 @@ Note: Repetition förekommer alltid, optimera inte för tidigt
 
 ### CSS - Nästa steg
 
+- [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) eller [Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) för moderna layouts
 - Förstå hur [Sass](https://sass-lang.com/), [Styled components](https://styled-components.com/), [Tailwind](https://tailwindcss.com/) och andra CSS-relaterade bibliotek förhåller sig till CSS
 - Förstå hur [BEM](http://getbem.com/), [CSS Modules](https://github.com/css-modules/css-modules) förenklar CSS genom att undvika specificitetskrig
-- Förstå hur vi genom att nyttja snarare än programmera bort kaskaden kan skriva effektiv CSS, se [Every Layout](https://every-layout.dev/layouts/)
+- Förstå hur vi genom att nyttja snarare än programmera bort specificitet kan skriva effektiv CSS, se [Every Layout](https://every-layout.dev/layouts/)
 
 ---
 
@@ -197,9 +190,9 @@ _\* [sanning med modifikation](https://developer.mozilla.org/en-US/docs/WebAssem
 
 ### JavaScript - Generella kodexempel
 
-- const, let, var
-- datatyper
-- es6
+- Definiera variabler: const, let, var
+- Datatyper
+- [ES6](http://es6-features.org/)
 
 Tips:
 
@@ -216,22 +209,16 @@ Note: Öppna DevTools. `document.` (autocomplete) `location.hostname`. `document
 
 --
 
-### JavaScript - [HTML-integration](https://codesandbox.io/s/link-html-and-javascript-6vj6b)
+### JavaScript - HTML-integration
 
-- Inline-script
+- [Inline-script](https://codesandbox.io/s/link-html-and-javascript-6vj6b)
 - Referens till annan fil i samma projekt
 - [Referens till tredjepartsfil på webben](https://reactjs.org/docs/cdn-links.html)
 - [... men tänk till först](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript)
 
 --
 
-### JavaScript - Labb
-
-(Anpassa till Jenny/Backend)
-
---
-
-#### JavaScript - Node och npm
+### JavaScript - Node och npm
 
 - [Node](https://nodejs.org/en/) - JavaScript utanför webbläsaren
 - [npm](https://www.npmjs.com/package/react) - Portalen till återanvändning av miljontals JavaScript-paket, [se Jonathan berätta mer och ge exempel](https://web.microsoftstream.com/video/f406c765-a041-44fd-b41b-cb5a219d472c?st=924)
@@ -240,11 +227,11 @@ Note: Node - främst relevant för JavaScript i server-sammanhang. Men, också b
 
 --
 
-#### Nästa steg
+### JavaScript - Nästa steg
 
-- Grundlig förståelse för JavaScript
+- Grundlig förståelse för JavaScript - hjälper ofta!
 - [TypeScript](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html)
-- Utforska ekosystemet
+- Utforska ekosystemet runt JavaScript (coming up!)
 
 ---
 
@@ -256,7 +243,7 @@ Note: Node - främst relevant för JavaScript i server-sammanhang. Men, också b
 
 --
 
-### React
+### [React](https://egghead.io/courses/the-beginner-s-guide-to-react)
 
 - Används i de allra flesta av våra uppdrag idag
 - Ett _bibliotek_ med mycket frihet, som ramverk så som [NextJS](https://nextjs.org/) och [Gatsby](https://www.gatsbyjs.com/) bygger på
@@ -273,7 +260,7 @@ Note: Mycket frihet = unopinionated. Bring your own... router, etc.
 - Inte unikt för React
 - [Exempelkomponent](https://codesandbox.io/s/react-counter-functional-component-xge6o?file=/src/Counter.js)
 
-Note: Komponenter kan vara väldigt simpla (knapp) eller väldigt komplexa (hela vyer). Gått från sidor till vyer. Kolla igenom exempelkomponent och prata lite om props.
+Note: Komponenter kan vara väldigt simpla (knapp) eller väldigt komplexa (hela vyer). Gått från sidor till vyer. Kolla igenom exempelkomponent och prata lite om props (lägg till i exemplet).
 
 --
 
@@ -286,9 +273,9 @@ Note: Komponenter kan vara väldigt simpla (knapp) eller väldigt komplexa (hela
 
 --
 
-### React - Labb
+### [React - Labb](https://codesandbox.io/s/elastic-maxwell-6fqrl?file=/src/App.js)
 
-React-template, återskapa funktionalitet från förra labben, jämför kod
+Spara länken, vi kommer tillbaka!
 
 ---
 
@@ -322,7 +309,15 @@ Note: fetch-API - red ut API-begreppet. Ofta pragmatiskt förhållningssätt til
 
 --
 
-## Data och API:er framöver
+### Data och API:er - Labb
+
+Använd den sparade länken från förra labben, eller utgå från [samma bas som innan](https://codesandbox.io/s/elastic-maxwell-6fqrl?file=/src/App.js)
+
+Mål: Hämta data från https://forefrontlivs.azurewebsites.net/Products
+
+--
+
+### Data och API:er framöver
 
 - Smartare front ends med t ex [react-query](https://react-query.tanstack.com/)
 - [GraphQL](https://graphql.org/) som [några kollegor snackade om](https://web.microsoftstream.com/video/fcf4e3f4-316a-4156-8634-57e0b83c1619?referrer=https:%2F%2Fl.workplace.com%2F)
