@@ -50,8 +50,8 @@ Note: Output: text, bilder, video. Input: knappar, textfält, reglage. GUI, TUI.
 
 ### Client side
 
-![Smartphone](img/Smartphone_icon.png)
-![Cloud](img/Cloud_icon.png) <!-- .element: class="fragment fade-left"  -->
+![Smartphone](img/Smartphone_icon_purple.png)
+![Cloud](img/Cloud_icon_purple.png) <!-- .element: class="fragment fade-left"  -->
 
 Note: Klient - vanligt begrepp i tekniska sammanhang, utveckla. (Jag gjorde ikonerna i Figma på 10 minuter, testa om ni är intresserade!)
 
