@@ -1,6 +1,37 @@
 # Front end
 
-### 2021-09-30
+### 2022-03-14
+
+--
+
+### Vilka är vi?
+
+och vad har vi för relation till front end-utveckling?
+
+Note: Hur mår du idag? Vad har du för förväntningar och förhoppningar? Finns det något vi borde veta?
+
+--
+
+### Agenda
+
+- Vad är front end?
+- Webbutveckling
+- HTML
+- CSS
+- JavaScript
+- Ramverk, transpilering och tooling
+- Data och API:er
+- Kort om hosting
+
+Note: Idag bygger vi en stabil grund som ni har nytta av vare sig ni redan sitter som React-utvecklare eller aldrig har testat front end innan.
+
+--
+
+### Arbetssätt
+
+_Teori_ varvat med flera _mini-labbar_!
+
+Note: Uppdelade i breakout rooms. Bekräfta att uppdelningen fungerar bra (t ex hellre sätta en person som inte kan närvara hela tiden i ett rum med 3 personer)
 
 ---
 
