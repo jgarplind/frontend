@@ -70,7 +70,7 @@ Note: Pratar nästan alltid om front end i webbsammanhang. Kanske mindre klyfta 
 ### Användarupplevelse
 
 - Användaren alltid i fokus
-- [Kan skapa en bra användarupplevelse, oavsett förutsättningar](https://uxdesign.cc/what-you-should-know-about-skeleton-screens-a820c45a571a)
+- [Kan skapa en bra användarupplevelse, oavsett förutsättningar](https://css-tricks.com/front-end-developers-have-to-manage-the-loading-experience/)
 - [Kan också förstöra allt](https://userinyerface.com/)
 - Det nödvändiga, och [det lilla extra](https://www.joshwcomeau.com/animation/3d-button/)
 
@@ -103,7 +103,7 @@ Note: Förväntas alltid, men lärs sällan ut. Förlåtande, webbläsarna jobba
 ### [HTML](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics)
 
 - [Struktur](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#semantics_in_html), information, och [inbyggd logik](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form)
-- Enkelt att lära sig, [svårt att bemästra](https://www.htmhell.dev/)
+- Enkelt att lära sig, [sällsynt att bemästra](https://www.htmhell.dev/)
 
 --
 
@@ -146,13 +146,13 @@ Note: Öppna webbläsarens DevTools och inspektera CSS:en
 
 --
 
-### CSS - Blandade fakta
+### CSS - Centrala fakta
 
-- Definierar hur HTML ska visualiseras
-- Alla (moderna) webbläsare har [inbyggd default-CSS](https://motherfuckingwebsite.com/). Ignorera med hjälp av en [CSS reset](https://meyerweb.com/eric/tools/css/reset/)
-- [Globalt scope](https://codesandbox.io/s/affectionate-benz-wppjz?file=/index.html)
-- [Cascading](https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade)
-- [Implicit](https://www.joshwcomeau.com/css/the-importance-of-learning-css/#it-improves-your-quality-of-life)
+- Definierar hur HTML ska _visualiseras_
+- Webbläsare har [inbyggd default-CSS](https://motherfuckingwebsite.com/). Ignoreras ofta med hjälp av en [CSS reset](https://meyerweb.com/eric/tools/css/reset/)
+- C står för [Cascading](https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade)
+- CSS har ett [globalt scope](https://codesandbox.io/s/agitated-platform-35562c?file=/src/Component.js)
+- CSS är ett [implicit språk](https://www.joshwcomeau.com/css/the-importance-of-learning-css/#it-improves-your-quality-of-life)
 
 Note: Layout, färger, etc. Öppna DevTools. Visa Computed.
 
@@ -168,11 +168,17 @@ Note: Layout, färger, etc. Öppna DevTools. Visa Computed.
 
 --
 
+### CSS - Layout
+
+- CSS har ett antal olika [layout modes](https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_mode)
+- Förutom normal nyttjar vi ofta [flex](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) och [grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+
+--
+
 ### CSS - HTML-integration
 
-- [inline-\<style\>](https://codesandbox.io/s/affectionate-benz-wppjz?file=/index.html)
-- `<link>`, (syns t ex i denna webbsidas head-tagg)
-- HTML-attributet [class](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/class) (men också andra sätt)
+- Koppla HTML-dokument med stylesheet genom [inline-\<style\>](https://codesandbox.io/s/affectionate-benz-wppjz?file=/index.html) eller `<link>`, (syns t ex i denna webbsidas head-tagg)
+- Koppla ihop HTML-element med CSS-regler genom HTML-attributet [class](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/class) eller något av massa andra sätt
 
 --
 
@@ -180,7 +186,7 @@ Note: Layout, färger, etc. Öppna DevTools. Visa Computed.
 
 [Codesandbox - utgångspunkt](https://codesandbox.io/s/huckleberry-hk4jq?file=/index.html)
 
-[Målbild](codesandbox.io/s/huckleberry-forked-6c3zl)
+[Målbild](https://codesandbox.io/s/huckleberry-forked-6c3zl)
 
 Beroende på ambitions-/kunskapsnivå:
 
@@ -188,14 +194,14 @@ Beroende på ambitions-/kunskapsnivå:
 2. Gör något som liknar helheten
 3. Gör en responsiv lösning som fungerar oavsett skärmstorlek
 
-Note: Demonstrera [facit](https://courses.joshwcomeau.com/css-for-js/01-rendering-logic-1/15-flow-workshop) lokalt. [Min dugliga lösning](codesandbox.io/s/huckleberry-forked-6c3zl)
+Note: Demonstrera [facit](https://courses.joshwcomeau.com/css-for-js/01-rendering-logic-1/15-flow-workshop) lokalt. [Min dugliga lösning](https://codesandbox.io/s/huckleberry-forked-6c3zl)
 
 --
 
 ### CSS - Vanliga problem
 
 - [Repetetivt](https://codesandbox.io/s/eager-drake-u85x5?file=/index.html). Motmedel: [Utility classes](https://adamwathan.me/css-utility-classes-and-separation-of-concerns/), komponenter (coming up!)
-- [Specificitetskrig](https://css-tricks.com/a-specificity-battle/)
+- [Specificitetskrig](https://flukeout.github.io/)
 
 Note: Repetition förekommer alltid, optimera inte för tidigt
 
@@ -203,7 +209,7 @@ Note: Repetition förekommer alltid, optimera inte för tidigt
 
 ### CSS - Nästa steg
 
-- [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) eller [Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) för moderna layouts
+- Förstå [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) och/eller [Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) för moderna layouts
 - Förstå hur [Sass](https://sass-lang.com/), [Styled components](https://styled-components.com/), [Tailwind](https://tailwindcss.com/) och andra CSS-relaterade bibliotek förhåller sig till CSS
 - Förstå hur [BEM](http://getbem.com/), [CSS Modules](https://github.com/css-modules/css-modules) förenklar CSS genom att undvika specificitetskrig
 - Förstå hur vi genom att nyttja snarare än programmera bort specificitet kan skriva effektiv CSS, se [Every Layout](https://every-layout.dev/layouts/)
@@ -214,8 +220,8 @@ Note: Repetition förekommer alltid, optimera inte för tidigt
 
 - Ger [liv](https://www.joshwcomeau.com/react/animated-sparkles-in-react/) till statiska HTML-dokument
 - Ett någorlunda konventionellt programmeringsspråk - det enda\* som webbläsare förstår
-- [Hatat](https://dev.to/zimspy007/why-we-love-to-hate-javascript-nfd) och älskat
-- Benämns ibland "VanillaJS"
+- Kanske det mest kontroversiella programmeringsspråket?
+- Benämns ibland "VanillaJS" i kontrast till alla ramverksberikade varianter
 
 _\* [sanning med modifikation](https://developer.mozilla.org/en-US/docs/WebAssembly)_
 
@@ -223,14 +229,10 @@ _\* [sanning med modifikation](https://developer.mozilla.org/en-US/docs/WebAssem
 
 ### JavaScript - Grundläggande
 
-- Variabler definieras med `const`, `let` eller `var`, främst de två förstnämnda
-- [Datatyper](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#javascript_types), dynamiska och underliggande, inget som syns i koden.
-- [ES6](http://es6-features.org/), releasen som gjorde JavaScript till ett omtyckt programmeringsspråk.
-
-Tips:
-
-- [API-referens](https://developer.mozilla.org/en-US/)
-- [Vettig kurs, scrolla till botten och hämta din "Free Preview"](https://justjavascript.com/)
+- Variabler definieras med `const`, `let` eller `var`, numera främst de två förstnämnda
+- [Datatyper](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#javascript_types) är dynamiska och underliggande, inget som syns i koden
+- [ES6](http://es6-features.org/), releasen som gjorde JavaScript till ett omtyckt programmeringsspråk
+- Mix av objektorienterat och funktionellt
 
 --
 
@@ -254,7 +256,7 @@ Note: Öppna DevTools. `document.` (autocomplete) `location.hostname`. `document
 ### JavaScript - Node och npm
 
 - [Node](https://nodejs.org/en/) - JavaScript utanför webbläsaren
-- [npm](https://www.npmjs.com/package/react) - Portalen till återanvändning av miljontals JavaScript-paket, [se Jonathan berätta mer och ge exempel](https://web.microsoftstream.com/video/f406c765-a041-44fd-b41b-cb5a219d472c?st=924)
+- [npm](https://www.npmjs.com/package/react) - Portalen till återanvändning av miljontals JavaScript-paket, [se kollegor berätta mer och ge exempel](https://web.microsoftstream.com/video/f406c765-a041-44fd-b41b-cb5a219d472c?st=924)
 
 Note: Node - främst relevant för JavaScript i server-sammanhang. Men, också basen för npm som är vitalt för JavaScripts ekosystem
 
@@ -279,7 +281,7 @@ Note: Node - främst relevant för JavaScript i server-sammanhang. Men, också b
 ### [React](https://egghead.io/courses/the-beginner-s-guide-to-react)
 
 - Används i de allra flesta av våra uppdrag idag
-- Ett _bibliotek_ med mycket frihet, som ramverk så som [NextJS](https://nextjs.org/) och [Gatsby](https://www.gatsbyjs.com/) bygger på
+- Ett _bibliotek_ med mycket frihet, som ramverk så som [NextJS](https://nextjs.org/) och [Remix](https://remix.run/) bygger på
 - Skrivs oftast som _deklarativ_ [JSX](https://reactjs.org/docs/introducing-jsx.html)-kod
 - Hjälper oss att skriva återanvändbar kod, med hjälp av komponenter
 
@@ -291,7 +293,7 @@ Note: Mycket frihet = unopinionated. Bring your own... router, etc.
 
 - Små, isolerade, återanvändbara delar av webbapplikationer
 - Inte unikt för React
-- [Exempelkomponent](https://codesandbox.io/s/traffic-light-using-hooks-xlw615w7ow?from-embed) som demonstrerar "props", "state", "JSX". [Läs mer om React](https://reactjs.org/docs/hello-world.html)
+- [Exempelkomponent](https://codesandbox.io/s/traffic-light-using-hooks-xlw615w7ow?from-embed) som demonstrerar "props", "state", "JSX".
 
 Note: Komponenter kan vara väldigt simpla (knapp) eller väldigt komplexa (hela vyer). Gått från sidor till vyer. Kolla igenom exempelkomponent och prata lite om props (lägg till i exemplet).
 
@@ -300,9 +302,9 @@ Note: Komponenter kan vara väldigt simpla (knapp) eller väldigt komplexa (hela
 ### React - Viktiga koncept och begrepp
 
 - [State](https://reactjs.org/docs/hooks-state.html)
-- [Virtual DOM](https://javascript.plainenglish.io/react-the-virtual-dom-comprehensive-guide-acd19c5e327a)
 - [Rendering](https://dev.to/teo_garcia/understanding-rendering-in-react-i5i)
 - [Hooks](https://reactjs.org/docs/hooks-intro.html)
+- [Props](https://beta.reactjs.org/learn/passing-props-to-a-component)
 
 --
 
@@ -335,7 +337,7 @@ Note: Bundler - Webpack. Transpiler - Babel/tsc
 
 ## Data och API:er
 
-- JavaScripts [fetch-API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) används i moderna webbapplikationer, ibland genom bibliotek så som [Axios](https://github.com/axios/axios)
+- JavaScripts [fetch-API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) används oftast i moderna webbapplikationer, ibland genom bibliotek så som [Axios](https://github.com/axios/axios)
 - Hämtar ofta data som [JSON](https://json.org/example.html) från [REST](https://restfulapi.net/)-API:er
 - JSON [deserialiseras](https://developer.mozilla.org/en-US/docs/Glossary/Deserialization) sedan och används i applikationen
 
@@ -361,15 +363,163 @@ Mål: Hämta data från https://forefrontlivs.azurewebsites.net/Products och vis
 
 ## Hosting
 
-Okomplicerat när det kommer till [statiska webbapplikationer](https://en.wikipedia.org/wiki/Static_web_page)
+Okomplicerat när det kommer till [statiska webbapplikationer](https://en.wikipedia.org/wiki/Static_web_page), fast numera väldigt enkelt för "dynamiska" webbapplikationer också.
 
 - Kolla in [Netlify](https://www.netlify.com/)/[Heroku](https://www.heroku.com/) eller dylika tjänster
-- I typiska projekt: Ungefär samma sak, fast med den provider kunden nyttjar, t ex Azure
+- I typiska projekt: Ungefär samma sak, fast med den provider kunden nyttjar, t ex Azure DevOps
 
-Note: Statisk webbapplikationer är de som har all dynamik på klient-sidan. Visa Netlify om tid. Kan ofta vara mer customization på typiska uppdrag - lära sig mer på DevOps-session.
+Note: Kan ofta vara mer customization på typiska uppdrag - lära sig mer på DevOps-session.
 
 ---
 
 ## Tack för idag
 
 Presentation gjord med [reveal.js](https://github.com/hakimel/reveal.js)
+
+---
+
+## Länkar / Referenser / Inspiration (1)
+
+- [Hantera laddningssekvenser](https://css-tricks.com/front-end-developers-have-to-manage-the-loading-experience/)
+- [Sämsta tänkbara UI](https://userinyerface.com/)
+- [Spänstig 3D-knapp](https://www.joshwcomeau.com/animation/3d-button/)
+- [Hur webben fungerar](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works)
+- [Länk-element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a)
+
+--
+
+## Länkar / Referenser / Inspiration (2)
+
+- [HTML - grunder och viktiga begrepp](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics)
+- [Semantisk HTML](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#semantics_in_html)
+- [Formulär-element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form)
+- [HTML worst practices](https://www.htmhell.dev/)
+- [DevTools - nätverkstabben](https://developer.chrome.com/docs/devtools/network/#load)
+
+--
+
+## Länkar / Referenser / Inspiration (3)
+
+- [JSX](https://reactjs.org/docs/introducing-jsx.html)
+- [HTML templates (Vue)](https://vuejs.org/guide/essentials/template-syntax.html)
+- [CSS - grunder och viktiga begrepp](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics)
+- [Plain HTML](https://motherfuckingwebsite.com/)
+- [HTML med minimal CSS](http://bettermotherfuckingwebsite.com/)
+
+--
+
+## Länkar / Referenser / Inspiration (4)
+
+- [Josh W Comeaus webbsida](https://www.joshwcomeau.com/)
+- [CSS reset](https://meyerweb.com/eric/tools/css/reset/)
+- [Cascading](https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade)
+- [CSS är implicit](https://www.joshwcomeau.com/css/the-importance-of-learning-css/#it-improves-your-quality-of-life)
+- [CSS layout modes](https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_mode)
+
+--
+
+## Länkar / Referenser / Inspiration (5)
+
+- [CSS Flex](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+- [Mer om Flex & Grid](https://www.youtube.com/c/LayoutLand)
+- [HTML class attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/class)
+- [CSS utility-klasser](https://adamwathan.me/css-utility-classes-and-separation-of-concerns/)
+
+--
+
+## Länkar / Referenser / Inspiration (6)
+
+- [CSS specificitet](https://flukeout.github.io/)
+- [Sass/SCSS](https://sass-lang.com/)
+- [Styled Components (CSS-in-JS)](https://styled-components.com/)
+- [Tailwind (utility-klasser)](https://tailwindcss.com/)
+- [BEM - noggrann namngivning mot specificitet](http://getbem.com/)
+
+--
+
+## Länkar / Referenser / Inspiration (7)
+
+- [CSS Modules - kompilera bort specificitet](https://github.com/css-modules/css-modules)
+- [Every Layout - bemästra specificitet]()
+- [Sparkles](https://www.joshwcomeau.com/react/animated-sparkles-in-react/)
+- [WebAssembly - andra språk än JavaScript](https://developer.mozilla.org/en-US/docs/WebAssembly)
+- [Typer i JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#javascript_types)
+
+--
+
+## Länkar / Referenser / Inspiration (8)
+
+- [ES6 features](http://es6-features.org/)
+- [JavaScript-kurs (ej gratis) - skapa bra mental modell](https://justjavascript.com/)
+- [JavaScript DOM-API:et](https://developer.mozilla.org/en-US/docs/Web/API/Document)
+- [Importera beroenden via CDN-länkar](https://reactjs.org/docs/cdn-links.html)
+- [Tredjepartsscript och performance](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript)
+
+--
+
+## Länkar / Referenser / Inspiration (9)
+
+- [NodeJS](https://nodejs.org/en/)
+- [npm](https://www.npmjs.com/package/react)
+- [React-utbilning på Forefront](https://web.microsoftstream.com/video/f406c765-a041-44fd-b41b-cb5a219d472c?st=924)
+- [TypeScript](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html)
+- [Komma igång med React](https://reactjs.org/docs/getting-started.html)
+
+--
+
+## Länkar / Referenser / Inspiration (10)
+
+- [Vue - (för det är svårt att googla :))](https://vuejs.org/)
+- [Svelte](https://svelte.dev/)
+- [Grundkurs i React, även givande för erfarna](https://egghead.io/courses/the-beginner-s-guide-to-react)
+- [React - Virtual DOM](https://javascript.plainenglish.io/react-the-virtual-dom-comprehensive-guide-acd19c5e327a)
+- [React - State](https://reactjs.org/docs/hooks-state.html)
+
+--
+
+## Länkar / Referenser / Inspiration (11)
+
+- [React - Rendering]()
+- [React - Hooks](https://reactjs.org/docs/hooks-intro.html)
+- [React - Props](https://beta.reactjs.org/learn/passing-props-to-a-component)
+- [Varför använda en Bundler](https://webpack.js.org/concepts/why-webpack/)
+- [Babel repl - kolla hur din kod transpileras](https://babeljs.io/repl/)
+
+--
+
+## Länkar / Referenser / Inspiration (12)
+
+- [Är vi på väg bort från bundling & transpilering?](https://world.hey.com/dhh/modern-web-apps-without-javascript-bundling-or-transpiling-a20f2755)
+- [VS Code](https://code.visualstudio.com/)
+- [ESLint](https://eslint.org/)
+- [Prettier](https://prettier.io/)
+- [git](https://git-scm.com/)
+
+--
+
+## Länkar / Referenser / Inspiration (13)
+
+- [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
+- [Axios](https://github.com/axios/axios)
+- [JSON - exempel och jämförelser](https://json.org/example.html)
+- [En förklaring av REST](https://restfulapi.net/)
+- [Deserialisering - en kort förklaring](https://developer.mozilla.org/en-US/docs/Glossary/Deserialization)
+
+--
+
+## Länkar / Referenser / Inspiration (14)
+
+- [Smart cache av server side state med react-query](https://react-query.tanstack.com/)
+- [GraphQL](https://graphql.org/)
+- [GraphQL av några kollegor](https://web.microsoftstream.com/video/fcf4e3f4-316a-4156-8634-57e0b83c1619?referrer=https:%2F%2Fl.workplace.com%2F)
+- [Streama HTTP](https://www.youtube.com/watch?v=G9PpImUEeUA)
+- [Hosting med Netlify](https://www.netlify.com/)
+
+--
+
+## Länkar / Referenser / Inspiration (15)
+
+- [Slides med reveal.js](https://github.com/hakimel/reveal.js)
+- [Single Page Application (SPA) vs. Multi Page Application (MPA)](https://www.youtube.com/watch?v=860d8usGC0o)
+- [Client Side Rendering (CSR) vs. Server Side Rendering (SSR) vs. Static Site Generation (SSG)](https://medium.com/nerd-for-tech/compare-and-contrast-csr-ssr-and-ssg-in-nextjs-58e3caf2e15e)
