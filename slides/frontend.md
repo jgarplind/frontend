@@ -178,7 +178,7 @@ Note: Layout, färger, etc. Öppna DevTools. Visa Computed.
 ### CSS - HTML-integration
 
 - Koppla HTML-dokument med stylesheet genom [inline-\<style\>](https://codesandbox.io/s/affectionate-benz-wppjz?file=/index.html) eller `<link>`, (syns t ex i denna webbsidas head-tagg)
-- Koppla ihop HTML-element med CSS-regler genom HTML-attributet [class](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/class) eller något av massa andra sätt
+- Koppla ihop HTML-element med CSS-regler genom HTML-attributet [class](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/class) eller något av [massa andra sätt](https://flukeout.github.io/)
 
 --
 
@@ -201,7 +201,7 @@ Note: Demonstrera [facit](https://courses.joshwcomeau.com/css-for-js/01-renderin
 ### CSS - Vanliga problem
 
 - [Repetetivt](https://codesandbox.io/s/eager-drake-u85x5?file=/index.html). Motmedel: [Utility classes](https://adamwathan.me/css-utility-classes-and-separation-of-concerns/), komponenter (coming up!)
-- [Specificitetskrig](https://flukeout.github.io/)
+- [Specificitetskrig](https://css-tricks.com/a-specificity-battle/)
 
 Note: Repetition förekommer alltid, optimera inte för tidigt
 
@@ -430,8 +430,8 @@ Presentation gjord med [reveal.js](https://github.com/hakimel/reveal.js)
 
 ## Länkar / Referenser / Inspiration (6)
 
-- [CSS specificitet](https://flukeout.github.io/)
-- [Sass/SCSS](https://sass-lang.com/)
+- [Specificitetskrig](https://css-tricks.com/a-specificity-battle/)
+- [Interaktiv specificitets-lärare](https://flukeout.github.io/)
 - [Styled Components (CSS-in-JS)](https://styled-components.com/)
 - [Tailwind (utility-klasser)](https://tailwindcss.com/)
 - [BEM - noggrann namngivning mot specificitet](http://getbem.com/)
