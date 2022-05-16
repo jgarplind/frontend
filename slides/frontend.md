@@ -441,7 +441,7 @@ Presentation gjord med [reveal.js](https://github.com/hakimel/reveal.js)
 ## Länkar / Referenser / Inspiration (7)
 
 - [CSS Modules - kompilera bort specificitet](https://github.com/css-modules/css-modules)
-- [Every Layout - bemästra specificitet]()
+- [Every Layout - bemästra specificitet](https://every-layout.dev/)
 - [Sparkles](https://www.joshwcomeau.com/react/animated-sparkles-in-react/)
 - [WebAssembly - andra språk än JavaScript](https://developer.mozilla.org/en-US/docs/WebAssembly)
 - [Typer i JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#javascript_types)
@@ -480,7 +480,7 @@ Presentation gjord med [reveal.js](https://github.com/hakimel/reveal.js)
 
 ## Länkar / Referenser / Inspiration (11)
 
-- [React - Rendering]()
+- [React - Rendering](https://dev.to/teo_garcia/understanding-rendering-in-react-i5i)
 - [React - Hooks](https://reactjs.org/docs/hooks-intro.html)
 - [React - Props](https://beta.reactjs.org/learn/passing-props-to-a-component)
 - [Varför använda en Bundler](https://webpack.js.org/concepts/why-webpack/)
